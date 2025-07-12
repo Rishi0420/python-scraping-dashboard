@@ -1,0 +1,71 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Analysis Dashboard</title>
+    <!-- Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .chart-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h1,
+        h2 {
+            color: #343a40;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Amazon Laptop Analysis Dashboard</h1>
+
+        <div class="row">
+            <!-- Chart 1: Laptops by Brand -->
+            <div class="col-lg-6">
+                <div class="chart-container">
+                    <h2 class="text-center">Laptops Count by Brand</h2>
+                    <canvas id="brandChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Chart 2: Average Price by Brand -->
+            <div class="col-lg-6">
+                <div class="chart-container">
+                    <h2 class="text-center">Average Price by Brand</h2>
+                    <canvas id="priceChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Chart 3: Laptops by Rating -->
+            <div class="col-lg-12">
+                <div class="chart-container">
+                    <h2 class="text-center">Laptops Distribution by Rating</h2>
+                    <canvas id="ratingChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Our custom JavaScript file to fetch data and create charts -->
+    <script src="/static/dashboard.js"></script>
+</body>
+
+</html>

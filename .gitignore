@@ -1,0 +1,18 @@
+# Virtual Environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Database file
+# We can generate this from the scripts, so no need to upload it.
+*.db
+
+# CSV file
+# This is also a generated file.
+*.csv
+
+# IDE specific files
+.vscode/
+.idea/
