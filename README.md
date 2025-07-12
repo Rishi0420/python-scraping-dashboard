@@ -22,7 +22,7 @@ A web dashboard that scrapes laptop data from Amazon.in, cleans it, and visualiz
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YourUsername/your-repository-name.git
+   git clone https://github.com/Rishi0420/python-scraping-dashboard.git
    cd your-repository-name
    ```
 
